@@ -1,0 +1,9 @@
+<template>
+    
+    <template for:each={conList} for:item="contact">
+        <lightning-card key = {contact.LastName} icon-name="standard:contact">
+            <p>{contact.LastName}</p>
+        </lightning-card>
+    </template>
+    <lightning-button label="get Contacts" onclick={getContactList} ></lightning-button>
+</template>

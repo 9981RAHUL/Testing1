@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Paretn to child component !!!!!!!!!!!!">
+        
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="number" 
+                             label="Enter Percentage"
+                             onkeyup={changeHandler}
+                             value={percentage}></lightning-input>
+            <c-p2c-child-component
+                progress-value = {percentage}>
+            </c-p2c-child-component>
+        </div>
+    
+    </lightning-card>
+    <lightning-button variant="base" 
+                      label="Reset Slider" 
+                      onclick={handleClick} 
+                     ></lightning-button>
+
+ <c-p2c-slider-component></c-p2c-slider-component>   
+</template>

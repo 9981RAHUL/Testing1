@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            shadow dom
+        </title>
+        <style>
+    
+        </style>
+
+    </head>
+    <body>
+        <div>
+            <p>Thanks for choosing zero to hero</p>
+        </div>
+        <div id="host"></div>
+        <script>
+            const elem = document.querySelector('#host')
+            const shadowroot = elem.attachShadow({mode :'open'})
+            shadowroot.innerHTML = '<p>I am a shadow dom</p>'
+
+            function featchPtag(){
+                    let tags =document.querySelectorAll('p')
+                    console.log(tags)
+
+            }
+
+        </script>
+        
+
+    </body>
+
+</html>
